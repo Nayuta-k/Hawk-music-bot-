@@ -9,18 +9,17 @@ module.exports.run = async (Discord, client, message, args) => {
 
 			let embed = new Discord.RichEmbed()
 			.setColor('RANDOM')
-			.setDescription("Avatar de " + `${author.username}`)
+			.setDescription(`${author.username}` + "'s avatar")
 			.setImage(user.displayAvatarURL)
 			return message.channel.send(embed)
 
 		} else {
 			var author = message.author;
-			console.log("marche")
 			let embed = new Discord.RichEmbed()
 			.setColor('RANDOM')
-			.setDescription("Votre avatar")
+			.setDescription("Your avatar")
 			.setImage(author.displayAvatarURL)
 			return message.channel.send(embed)
-		}
+		} 
 
 }
