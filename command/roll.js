@@ -6,7 +6,7 @@ module.exports.run = async (Discord, client, message, args) => {
 		if (randnum<100){
 			message.reply("Got " + randnum + " !");
 		} else {
-			message.reply('Omg got' + randnum + ', awesome !)
+			message.reply('Omg got' + randnum + ', awesome !')
 		}
 
 }
