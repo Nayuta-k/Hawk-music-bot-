@@ -5,7 +5,7 @@ module.exports.run = async (client, args, message) => {
       let user = message.mentions.users.first() || message.author;
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
-      .setTitle(`${user.username}` + " info)
+      .setTitle(`${user.username}` + " info")
       .setThumbnail(user.displayAvatarURL)
       .addField("Status", user.presence.status, true)
       .addField("ID", user.id, true)
