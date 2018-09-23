@@ -38,7 +38,7 @@ client.on("guildMemberRemove", (member) => {
     member.guild.channels.get('').send("Bye **" + member.user.username + '**');
 });
 
-client.login(config.token);
+client.login(process.env.TOKEN); //protect your token if you use a vps, else use config.prefix
 
 client.on('message', message => {
 var msg = message.content.toLowerCase();
