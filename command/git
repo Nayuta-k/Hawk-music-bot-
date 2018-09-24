@@ -1,3 +1,5 @@
+const Discord = require('discord.js');
+
 module.exports.run = async (Discord, message, args) => {
 
   let git = new Discord.RichEmbed()
