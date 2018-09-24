@@ -4,9 +4,9 @@ module.exports.run = async (Discord, client, message, args) => {
     roll();
 
 		if (randnum<100){
-			message.reply("Got " + randnum + " !");
+			message.reply("t'as fait " + randnum + " !");
 		} else {
-			message.reply('Omg got' + randnum + ', awesome !')
+			message.reply('omg ta eu' + randnum)
 		}
 
 }
