@@ -12,7 +12,7 @@ console.log('connexion.....')
 client.on('ready', () => {
     client.user.setPresence({ game : { name : `${client.guilds.size} servers`, url : 'https://www.twitch.tv/monstercat'}});
     //client.user.setPresence({ game : { name : 'Access denied', url : 'https://www.twitch.tv/monstercat'}})
-    console.log('connexion terminée')
+    console.log('connected !')
 });
 
 client.on("guildCreate", guild => {
